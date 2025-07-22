@@ -1,13 +1,23 @@
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      window.scrollTo({
-        top: target.offsetTop - 70,
-        behavior: 'smooth'
-      });
-    }
-  });
-});
+const display = document.getElementById('display');
+
+function appendValue(value) {
+  display.value += value;
+}
+
+function clearDisplay() {
+  display.value = '';
+}
+
+function deleteLast() {
+  display.value = display.value.slice(0, -1);
+}
+
+function calculateResult() {
+  try {
+    // Replace custom operators with actual ones
+    const result = eval(display.value);
+    display.value = result;
+  } catch {
+    display.value = 'Error';
+  }
+}
