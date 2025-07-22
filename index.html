@@ -2,68 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>M.S.Preetha</h1>
-    <p class="tagline">Web Developer | Creative Thinker | Tech Enthusiast</p>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">My Portfolio</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT ME</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#experience">EXPERIENCE</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <img src="https://st2.depositphotos.com/1010683/6609/i/450/depositphotos_66091057-stock-photo-asian-businesswoman-with-business-suit.jpg" alt="My Photo" />
-    <p>Hi! I'm Preetha, a passionate web developer with experience in HTML, CSS, and JavaScript. I love building user-friendly websites and learning new technologies.</p>
+  <!-- HOME -->
+  <section id="home" class="section hero">
+    <div class="hero-text">
+      <h1>M.S.PREETHA</h1>
+      <p>I am a Professional Developer and ICT Degree holder. I have five years of experience in IT Sector as an ICT Lecturer.</p>
+      <button onclick="alert('Thank you for your interest!')">Hire Me</button>
+    </div>
+    <div class="hero-image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuloTH7TEzwX4-7WosgiOu8_sIyowIccMHgg&s" alt="M.S.PREETHA" />
+    </div>
   </section>
 
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>ABOUT ME</h2>
+    <div class="content">
+      
+      <div>
+        <p>I blend technical knowledge with practical experience in the IT industry. Passionate about teaching and development.</p>
+        <p>Proficient in SDLC, web applications, and mobile development with a strong focus on maintainable code and teamwork.</p>
+        <a href="#" class="download-btn">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <h2>SERVICES</h2>
+    <div class="cards">
+      <div class="card">Web Development</div>
+      <div class="card">Mobile App Development</div>
+      <div class="card">Technical Training</div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>SKILLS</h2>
+    <div class="cards">
+      <div class="card">HTML, CSS, JavaScript</div>
+      <div class="card">React, Node.js</div>
+      <div class="card">Python, Django</div>
+      <div class="card">Git & GitHub</div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h2>EXPERIENCE</h2>
     <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Python</li>
+      <li><strong>Senior Developer</strong> at TechSoft — 2022 to Present</li>
+      <li><strong>ICT Lecturer</strong> at ABC College — 2019 to 2022</li>
+      <li><strong>Intern</strong> at WebNest — 2018</li>
     </ul>
   </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>A responsive portfolio built with HTML, CSS, and JavaScript.</p>
-      <img src="https://img.freepik.com/premium-vector/flat-design-portfolio-template-design_52683-80877.jpg" alt="portfolio" />
-    </div>
-    <div class="project">
-      <h3>Weather App</h3>
-      <p>Shows real-time weather using OpenWeatherMap API.</p>
-      <img src="https://www.aipython.in/wp-content/uploads/2021/09/weather-api-python.jpg" alt="weather app" />
-    </div>
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>CONTACT</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
-
-  <!-- Resume -->
-  <section id="resume">
-    <h2>Resume</h2>
-    <a href="resume.pdf" download>Download My Resume (PDF)</a>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: preetha@example.com</p>
-    <p>Phone: +91-9876543210</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 M.S.Preetha. All rights reserved.</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
